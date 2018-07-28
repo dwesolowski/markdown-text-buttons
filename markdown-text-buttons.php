@@ -74,19 +74,19 @@ class MarkdownTextButtons {
              * - Title, title="" attribute (optional)
              * - Priority/position on bar, 1-9 = first, 11-19 = second, 21-29 = third, etc. (optional)
              */
-            QTags.addButton( 'md-heading-1', 'H1', '# ' );
-            QTags.addButton( 'md-heading-2', 'H2', '## ' );
-            QTags.addButton( 'md-heading-3', 'H3', '### ' );
+            QTags.addButton( 'md-heading-1', 'h1', '# ' );
+            QTags.addButton( 'md-heading-2', 'h2', '## ' );
+            QTags.addButton( 'md-heading-3', 'h3', '### ' );
             QTags.addButton( 'md-bold', 'b', '**', '**' );
             QTags.addButton( 'md-italic', 'i', '*', '*' );
             QTags.addButton( 'md-strikethrough', 's', '~~', '~~' );
             QTags.addButton( 'md-blockquote', 'q', '> ' );
-            QTags.addButton( 'md-ordered-list', 'ul', '1. ' );
-            QTags.addButton( 'md-unordered-list', 'li', '- ' );
+            QTags.addButton( 'md-ordered-list', 'ol', '1. ' );
+            QTags.addButton( 'md-unordered-list', 'ul', '- ' );
             QTags.addButton( 'md-horizontal-rule', 'hr', '---' );
             QTags.addButton( 'md_tables', 'tbl', table, '');
             QTags.addButton( 'md-link', 'link', '[title](https://www.example.com)' );
-            QTags.addButton( 'md-image', 'image', '![alt text](image.jpg)' );
+            QTags.addButton( 'md-image', 'img', '![alt text](image.jpg)' );
             QTags.addButton( 'md-code-inline', 'code inline', '`', '`' );
             QTags.addButton( 'md-code-block', 'code block', '```language\n', '```' );
         </script>
