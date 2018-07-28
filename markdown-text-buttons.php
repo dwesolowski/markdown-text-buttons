@@ -59,6 +59,12 @@ class MarkdownTextButtons {
                 $( 'form#your-profile tr.user-syntax-highlighting-wrap' ).remove();
             });
 
+            var table = [
+                '| Header 1 | Header 2 | Header 3 | Header 4 |\n',
+                '|----------|:---------|:--------:|---------:|\n',
+                '| default | align left | align center | align right |'
+                ].join('');
+
             /* Adding Markdown Quicktag buttons to the editor WordPress ver. 3.3 and above
              * - Button HTML ID (required)
              * - Button display, value="" attribute (required)
@@ -78,6 +84,7 @@ class MarkdownTextButtons {
             QTags.addButton( 'md-ordered-list', 'ul', '1. ' );
             QTags.addButton( 'md-unordered-list', 'li', '- ' );
             QTags.addButton( 'md-horizontal-rule', 'hr', '---' );
+            QTags.addButton( 'md_tables', 'tbl', table, '');
             QTags.addButton( 'md-link', 'link', '[title](https://www.example.com)' );
             QTags.addButton( 'md-image', 'image', '![alt text](image.jpg)' );
             QTags.addButton( 'md-code-inline', 'code inline', '`', '`' );
