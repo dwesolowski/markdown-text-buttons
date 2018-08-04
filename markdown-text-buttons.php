@@ -65,6 +65,15 @@ class MarkdownTextButtons {
                 '| default | align left | align center | align right |'
                 ].join('');
 
+            var footnote = [
+                'Here is a footnote reference,[^1] and another.[^longnote]\n',
+                '\n',
+                'Place below at end of your post.\n',
+                '\n',
+                '[^1]: Here is the footnote.\n',
+                '[^longnote]: Here\'s one with multiple blocks.'
+                ].join('');
+
             /* Adding Markdown Quicktag buttons to the editor WordPress ver. 3.3 and above
              * - Button HTML ID (required)
              * - Button display, value="" attribute (required)
@@ -89,6 +98,7 @@ class MarkdownTextButtons {
             QTags.addButton( 'md-image', 'img', '![alt text](image.jpg)' );
             QTags.addButton( 'md-code-inline', 'code inline', '`', '`' );
             QTags.addButton( 'md-code-block', 'code block', '```language\n', '```' );
+            QTags.addButton( 'md_footnotes', 'footnotes', footnote, '' );
         </script>
     <?php
     }
